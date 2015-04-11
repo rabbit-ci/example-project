@@ -1,0 +1,12 @@
+{
+  "ENV": {
+    "VAR_1": "This is VAR_1."
+  },
+
+  "commands": [
+    "echo 'cool, it works!'"
+    "touch somefile.txt"
+    "ls",
+    "echo $VAR_1"
+  ]
+}
