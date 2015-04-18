@@ -1,12 +1,39 @@
 {
   "ENV": {
-    "VAR_1": "This is VAR_1."
+    "VAR_1": "This is VAR_1.",
+    "ANOTHER_VAR": "This is another variable"
   },
 
-  "commands": [
-    "echo 'cool, it works!'",
-    "touch somefile.txt",
-    "ls",
-    "echo $VAR_1"
+  "scripts" : [
+    {
+      "name": "main",
+      "description": "Main script",
+      "commands": [
+        "echo 'cool, it works!'",
+        "touch somefile.txt",
+        "ls",
+        "echo $VAR_1",
+        "echo $VAR_2"
+      ]
+    },
+    {
+      "name": "saybacon"
+      "description": "This script says bacon"
+      "commands": [
+        "echo bacon"
+      ]
+    },
+    {
+      "name": "script_vars",
+      "description": "demonstrates vars scoped to a script",
+      "ENV": {
+        "ANOTHER_VAR": "This overrides the global var",
+        "SOMETHING_ELSE": "Hello"
+      },
+      "commands": [
+        "echo $ANOTHER_VAR",
+        "echo $SOMETHING_ELSE"
+      ]
+    }
   ]
 }
