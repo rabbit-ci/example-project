@@ -1,0 +1,16 @@
+repo: https://github.com/rabbit-ci/example-project.git
+steps:
+  -
+    boxes:
+      - ubuntu/vivid64
+      - ubuntu/trusty64
+    command: |
+      git rev-parse HEAD
+      cat README.md
+  -
+    boxes:
+      - ubuntu/vivid64
+    command: |
+      git rev-parse HEAD
+      lsb_release -a
+      echo "Did it work?"
