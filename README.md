@@ -1,2 +1,4 @@
 # example-project
-Example project for Rabbit CI
+
+This is a test.
+Example project for Rabbit CI.
