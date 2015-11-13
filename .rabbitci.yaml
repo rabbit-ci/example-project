@@ -1,7 +1,7 @@
 repo: https://github.com/rabbit-ci/example-project.git
 steps:
   -
-    name: "cat the README"
+    name: "`cat` the README"
     boxes:
       - ubuntu/vivid64
       - ubuntu/trusty64
@@ -9,7 +9,7 @@ steps:
       git rev-parse HEAD
       cat README.md
   -
-    name: "show ubuntu version"
+    name: "Show ubuntu version"
     boxes:
       - ubuntu/vivid64
     command: |
