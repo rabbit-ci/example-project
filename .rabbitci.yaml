@@ -1,7 +1,7 @@
 repo: https://github.com/rabbit-ci/example-project.git
 steps:
   -
-    name: "`cat` the README"
+    name: "`cat` the README file"
     boxes:
       - ubuntu/vivid64
       - ubuntu/trusty64
