@@ -16,9 +16,3 @@ steps:
       git rev-parse HEAD
       lsb_release -a
       echo "Did it work?"
-  -
-    name: "Print a bunch of stuff"
-    boxes:
-      - ubuntu/vivid64
-    command: |
-      timeout 10s yes lala
