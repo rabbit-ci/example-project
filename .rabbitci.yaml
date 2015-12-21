@@ -4,7 +4,6 @@ steps:
     name: "`cat` the README file"
     boxes:
       - ubuntu/vivid64
-      - ubuntu/trusty64
     command: |
       git rev-parse HEAD
       cat README.md
