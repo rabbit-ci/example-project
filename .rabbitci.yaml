@@ -1,26 +1,9 @@
 repo: https://github.com/rabbit-ci/example-project.git
 steps:
   -
-    name: "`cat` the README file"
+    name: "Install homebrew"
     boxes:
-      - ubuntu/vivid64
+      - jhcook/osx-elcapitan-10.11
     command: |
-      git rev-parse HEAD
-      cat README.md
-  -
-    name: "Show ubuntu version"
-    boxes:
-      - ubuntu/vivid64
-    command: |
-      git rev-parse HEAD
-      lsb_release -a
-      echo "Did it work?"
-  -
-    name: "Slow"
-    boxes:
-      - ubuntu/vivid64
-    command: |
-      git rev-parse HEAD
-      sleep 10
-      lsb_release -a
-      echo "Did it work?"
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      brew help
