@@ -4,14 +4,14 @@ steps:
     name: "`cat` the README file"
     boxes:
       - ubuntu/vivid64
-    command: |
+    script: |
       git rev-parse HEAD
       cat README.md
   -
     name: "Show ubuntu version"
     boxes:
       - ubuntu/vivid64
-    command: |
+    script: |
       git rev-parse HEAD
       lsb_release -a
       echo "Did it work?"
@@ -19,7 +19,7 @@ steps:
     name: "Slow"
     boxes:
       - ubuntu/vivid64
-    command: |
+    script: |
       git rev-parse HEAD
       sleep 10
       lsb_release -a
