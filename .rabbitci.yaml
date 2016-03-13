@@ -4,6 +4,7 @@ steps:
     name: "Install homebrew"
     boxes:
       - jhcook/osx-elcapitan-10.11
-    command: |
+    before_script: |
       /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    script: |
       brew help
