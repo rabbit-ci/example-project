@@ -1,26 +1,10 @@
 repo: https://github.com/rabbit-ci/example-project.git
 steps:
   -
-    name: "`cat` the README file"
+    name: "Install zsh"
     boxes:
       - ubuntu/vivid64
     script: |
       git rev-parse HEAD
+      sudo apt-get install -y zsh
       cat README.md
-  -
-    name: "Show ubuntu version"
-    boxes:
-      - ubuntu/vivid64
-    script: |
-      git rev-parse HEAD
-      lsb_release -a
-      echo "Did it work?"
-  -
-    name: "Slow"
-    boxes:
-      - ubuntu/vivid64
-    script: |
-      git rev-parse HEAD
-      sleep 10
-      lsb_release -a
-      echo "Did it work?"
