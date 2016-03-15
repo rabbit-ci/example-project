@@ -4,6 +4,8 @@ steps:
     name: "Install zsh"
     boxes:
       - gce
+    before_script: |
+      sudo apt-get install -y git
     script: |
       git rev-parse HEAD
       sudo apt-get install -y zsh
