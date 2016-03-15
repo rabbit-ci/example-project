@@ -1,7 +1,7 @@
 repo: https://github.com/rabbit-ci/example-project.git
 steps:
   -
-    name: "Install zsh"
+    name: "Install zsh (slashy branch)"
     boxes:
       - ubuntu/vivid64
     script: |
