@@ -9,7 +9,7 @@
       "script": "git rev-parse HEAD\ncat README.md\n"
     },
     {
-      "name": "Show ubuntu version",
+      "name": "Show Ubuntu version",
       "boxes": [
         "ubuntu/vivid64"
       ],
