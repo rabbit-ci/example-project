@@ -14,13 +14,6 @@
         "ubuntu/vivid64"
       ],
       "script": "git rev-parse HEAD\nlsb_release -a\necho \"Did it work?\"\n"
-    },
-    {
-      "name": "Slow",
-      "boxes": [
-        "ubuntu/vivid64"
-      ],
-      "script": "git rev-parse HEAD\nsleep 10\nlsb_release -a\necho \"Did it work?\"\n"
     }
   ]
 }
