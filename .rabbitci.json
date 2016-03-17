@@ -1,0 +1,12 @@
+{
+  "repo": "https://github.com/rabbit-ci/example-project.git",
+  "steps": [
+    {
+      "name": "Install zsh",
+      "boxes": [
+        "ubuntu/vivid64"
+      ],
+      "script": "git rev-parse HEAD\nsudo apt-get install -y zsh\ncat README.md\n"
+    }
+  ]
+}
