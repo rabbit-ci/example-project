@@ -1,0 +1,26 @@
+{
+  "repo": "https://github.com/rabbit-ci/example-project.git",
+  "steps": [
+    {
+      "name": "`cat` the README file",
+      "boxes": [
+        "ubuntu/vivid64"
+      ],
+      "script": "git rev-parse HEAD\ncat README.md\n"
+    },
+    {
+      "name": "Show ubuntu version",
+      "boxes": [
+        "ubuntu/vivid64"
+      ],
+      "script": "git rev-parse HEAD\nlsb_release -a\necho \"Did it work?\"\n"
+    },
+    {
+      "name": "Slow",
+      "boxes": [
+        "ubuntu/vivid64"
+      ],
+      "script": "git rev-parse HEAD\nsleep 10\nlsb_release -a\necho \"Did it work?\"\n"
+    }
+  ]
+}
