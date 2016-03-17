@@ -6,7 +6,7 @@
       "boxes": [
         "ubuntu/vivid64"
       ],
-      "script": "git rev-parse HEAD\nsudo apt-get install -y zsh\ncat README.md\n"
+      "script": "git rev-parse HEAD\nsudo apt-get install -y zsh\ncat README.md"
     }
   ]
 }
