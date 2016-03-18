@@ -3,7 +3,7 @@
     {
       "name": "Install zsh",
       "boxes": [
-        "ubuntu/wily64"
+        "ubuntu/trusty64"
       ],
       "script": "git rev-parse HEAD\nsudo apt-get install -y zsh\ncat README.md"
     }
