@@ -1,5 +1,4 @@
 {
-  "repo": "https://github.com/rabbit-ci/example-project.git",
   "steps": [
     {
       "name": "Install zsh.",
