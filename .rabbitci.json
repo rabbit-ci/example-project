@@ -12,10 +12,10 @@
     },
     {
       "name": "Show Ubuntu version",
-      "provider": "virtualbox",
-      "before_script": "sudo apt-get update\nsudo apt-get install -y git",
+      "provider": "docker",
+      "before_script": "apt-get update\napt-get install -y git",
       "boxes": [
-        "ubuntu/vivid64"
+        "ubuntu:vivid"
       ],
       "script": "git rev-parse HEAD\nlsb_release -a\necho \"Did it work?\"\n"
     }
