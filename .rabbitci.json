@@ -4,18 +4,18 @@
     {
       "name": "`cat` the README file.",
       "provider": "docker",
-      "before_script": "apt-get update\napt-get install -y git",
+      "before_script": "",
       "boxes": [
-        "ubuntu:vivid"
+        "hunterboerner/rabbit-ci-testing"
       ],
       "script": "git rev-parse HEAD\ncat README.md\n"
     },
     {
       "name": "Show Ubuntu version",
       "provider": "docker",
-      "before_script": "apt-get update\napt-get install -y git",
+      "before_script": "",
       "boxes": [
-        "ubuntu:vivid"
+        "hunterboerner/rabbit-ci-testing"
       ],
       "script": "git rev-parse HEAD\nlsb_release -a\necho \"Did it work?\"\n"
     }
