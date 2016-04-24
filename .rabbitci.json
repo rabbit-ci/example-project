@@ -3,13 +3,15 @@
   "steps": [
     {
       "name": "`cat` the README file.",
+      "provider": "docker",
       "boxes": [
-        "ubuntu/vivid64"
+        "ubuntu:vivid"
       ],
       "script": "git rev-parse HEAD\ncat README.md\n"
     },
     {
       "name": "Show Ubuntu version",
+      "provider": "virtualbox",
       "boxes": [
         "ubuntu/vivid64"
       ],
