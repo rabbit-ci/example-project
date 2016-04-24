@@ -4,7 +4,7 @@
     {
       "name": "`cat` the README file.",
       "provider": "docker",
-      "before_script": "sudo apt-get update\nsudo apt-get install -y git",
+      "before_script": "apt-get update\napt-get install -y git",
       "boxes": [
         "ubuntu:vivid"
       ],
