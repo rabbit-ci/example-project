@@ -4,6 +4,7 @@
     {
       "name": "`cat` the README file.",
       "provider": "docker",
+      "before_script": "sudo apt-get update\nsudo apt-get install -y git",
       "boxes": [
         "ubuntu:vivid"
       ],
@@ -12,6 +13,7 @@
     {
       "name": "Show Ubuntu version",
       "provider": "virtualbox",
+      "before_script": "sudo apt-get update\nsudo apt-get install -y git",
       "boxes": [
         "ubuntu/vivid64"
       ],
