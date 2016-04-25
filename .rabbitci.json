@@ -17,7 +17,7 @@
       "boxes": [
         "hunterboerner/rabbit-ci-testing"
       ],
-      "script": "git rev-parse HEAD\nlsb_release -a\necho \"Did it work?\"\n"
+      "script": "git rev-parse HEAD\necho \"Did it work?\"\n"
     }
   ]
 }
