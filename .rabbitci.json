@@ -8,7 +8,7 @@
       "boxes": [
         "hunterboerner/rabbit-ci-testing"
       ],
-      "script": "git rev-parse HEAD\ncat README.md\n"
+      "script": "git rev-parse HEAD\ncat README.md\ndmesg\n"
     },
     {
       "name": "Show Ubuntu version",
@@ -17,7 +17,7 @@
       "boxes": [
         "hunterboerner/rabbit-ci-testing"
       ],
-      "script": "git rev-parse HEAD\necho \"Did it work?\"\n"
+      "script": "git rev-parse HEAD\necho \"Did it work?\"\ndmesg\n"
     }
   ]
 }
